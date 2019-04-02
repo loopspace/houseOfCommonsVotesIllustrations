@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+  <script type="text/javascript" src="./d3.v4.min.js" defer></script>
+  <script type="text/javascript" src="./createLayout.js" defer></script>
 <style>
 
 .links line {
@@ -12,8 +14,6 @@
   stroke: #000;
   stroke-width: 0.5px;
 }
-
-
 
 div.tooltip {
     position: absolute;
@@ -34,20 +34,11 @@ div.tooltip {
 
 <h1> Indicative votes in the House of Commons on Brexit</h1>
 <h2> April 1 2019</h2>
-<svg width="1000" height="700"></svg>
-  <!--  this script does all the actual work -->
-  <script type="text/javascript" src="./forceLayoutVoteApril1.js"></script>
+<svg width="1000" height="700" id="April"></svg>
 
 <h2> March 27 2019</h2>
 <!--into this svg the illustration will be drawn -->
-
-<svg width="1000" height="700"></svg>
-  <!--  we call the d3 library -->
-  <script type="text/javascript" src="./d3.v4.min.js"></script>
-  <!--  this script does all the actual work -->
-  <script type="text/javascript" src="./forceLayoutVote.js"></script>
-
-
+<svg width="1000" height="700" id="March"></svg>
 
 
 <p> Illustration by <a href="https://floklimm.github.io/"> Florian Klimm</a>. All code is freely available on <a href="https://github.com/floklimm/houseOfCommonsVotesIllustrations"> Github</a>. Raw data from the <a href="https://commonsvotes.digiminster.com/"> UK Parliament website</a>. <p>
